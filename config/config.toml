@@ -1,0 +1,13 @@
+[server]
+address = ":8200"
+version="0.1.1"
+[database]
+[[database.default]]
+type = "mysql"
+link = "root:1@tcp(127.0.0.1:3306)/Khronos"
+[redis]
+default = "fushisanlang.cn:6379,4,fushisanlang_redis"
+[logger]
+    path   = "/Users/fushisanlang/src/go/go/src/Khronos/log"
+    level  = "all"
+    stdout = false
