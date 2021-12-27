@@ -21,7 +21,7 @@ func Run() {
 	s := g.Server()
 	//session相关
 	s.SetConfigWithMap(g.Map{
-		"SessionMaxAge":  time.Hour * 24,
+		"SessionMaxAge":  time.Hour * 2400,
 		"SessionStorage": gsession.NewStorageRedis(g.Redis()),
 	})
 
